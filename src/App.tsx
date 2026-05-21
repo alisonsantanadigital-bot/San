@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Collection from "./components/Collection";
 import Gallery from "./components/Gallery";
+
 import Experience from "./components/Experience";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
@@ -49,6 +50,7 @@ export default function App() {
             <Collection />
             <Experience />
             <Gallery />
+            
             <Testimonials />
             <Contact />
           </main>
@@ -56,7 +58,7 @@ export default function App() {
 
           {/* WhatsApp Floating Button */}
           <motion.a
-            href="https://wa.me/5511942890717"
+            href="https://wa.me/5511969335179?text=Olá,%20Dr.%20Soloneto.%20Vim%20pelo%20site%20e%20gostaria%20de%20orientação%20jurídica%20trabalhista."
             target="_blank"
             rel="noopener noreferrer"
             initial={{ scale: 0, opacity: 0 }}
@@ -68,7 +70,7 @@ export default function App() {
           >
             <MessageCircle size={32} />
             <span className="absolute right-full mr-4 bg-white text-coffee px-4 py-2 rounded-lg text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-              Fale conosco
+              Fale com o advogado
             </span>
           </motion.a>
           
