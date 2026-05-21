@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Coffee } from "lucide-react";
+import { Menu, X, Scale } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,8 +17,8 @@ export default function Navbar() {
   const navLinks = [
     { name: "Início", href: "#inicio" },
     { name: "Sobre", href: "#sobre" },
-    { name: "Coleção", href: "#colecao" },
-    { name: "Galeria", href: "#galeria" },
+    { name: "Soluções", href: "#colecao" },
+    { name: "Diferenciais", href: "#diferenciais" },
     { name: "Contato", href: "#contato" },
   ];
 
@@ -35,8 +35,8 @@ export default function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-2 text-2xl font-serif font-bold text-cream tracking-tighter"
         >
-          <Coffee className="text-gold" />
-          <span>CAFÉ BORGÔ</span>
+          <Scale className="text-gold" />
+          <span>SOLONETO SALDANHA</span>
         </motion.a>
 
         {/* Desktop Menu */}
@@ -54,14 +54,14 @@ export default function Navbar() {
             </motion.a>
           ))}
           <motion.a
-            href="https://wa.me/5511942890717"
+            href="https://wa.me/5511969335179?text=Olá,%20Dr.%20Soloneto.%20Vim%20pelo%20site%20e%20gostaria%20de%20orientação%20jurídica%20trabalhista."
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             className="bg-gold text-coffee px-6 py-2 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-cream transition-colors"
           >
-            Reservar
+            WhatsApp
           </motion.a>
         </div>
 
@@ -95,12 +95,12 @@ export default function Navbar() {
                 </a>
               ))}
               <a
-                href="https://wa.me/5511942890717"
+                href="https://wa.me/5511969335179?text=Olá,%20Dr.%20Soloneto.%20Vim%20pelo%20site%20e%20gostaria%20de%20orientação%20jurídica%20trabalhista."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gold text-coffee px-6 py-3 rounded-full font-bold text-center mt-4"
               >
-                Reservar Mesa
+                Falar no WhatsApp
               </a>
             </div>
           </motion.div>
